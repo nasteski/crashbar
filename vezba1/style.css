@@ -1,0 +1,240 @@
+/* general  */
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;400;800&display=swap');
+body{
+    margin: 0;
+    background: rgb(2,0,36);
+    background: radial-gradient(circle, rgba(2,0,36,1) 24%, rgba(252,0,0,1) 84%, rgba(0,0,0,1) 100%);
+    color: #ffffff;
+    font-family: 'Martian Mono', monospace;
+    scroll-behavior: smooth;
+}
+h1,h2, h3, p, ul{
+    margin-top: 0;
+}
+img{
+    max-width: 100%;
+}
+*{
+    box-sizing: border-box;
+}
+/* nav-bar */
+.mainnav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 50px;
+    padding-right: 50px;
+    background-color: #000000;
+}
+.nav{
+    display: flex;
+}
+#logo{
+    width: 85px;
+    height: 85px;
+    margin: 0;
+}
+.logo{
+    height: 85px;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+    margin-right: 30px;
+}
+a:hover{
+    color: #fc0000;
+    transition: 1s;
+}
+/* Events Section */
+.section1{
+    margin-top: 70px;
+    text-align: center;
+    align-items: center;
+}
+.events{
+    padding: 20px;
+}
+.event-img{
+    text-align: center;
+    white-space: nowrap;
+}
+.event-img ul{
+    padding: 0;
+}
+.event-img li{
+    display: inline-block;
+    width: 35%;
+    padding-left: 0;
+}
+.events h1{
+    margin-bottom: 80px;
+    margin-top: 50px;
+}
+/* video section */
+.section2{
+    text-align: center;
+    padding: 30px;
+    margin-top: 150px;
+}
+.section2 h3{
+    font-size: 30px;
+}
+/* Footer */
+footer{
+    background-color: #000000;
+    padding: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+}
+i{
+    color: #ffffff;
+    font-size: 40px;
+}
+i:hover{
+    color: lightgray;
+    transition: 1s;
+}
+footer p{
+    font-size: 20px;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+.location p{
+    text-align: justify;
+    text-align-last: center;
+}
+#footertext, #footertex{
+    margin-top: 30px;
+}
+#phone:hover{
+    color: lightgray;
+}
+/* responsiveness */
+@media screen and (max-width: 1024px){
+    footer{
+    display: flex;
+    flex-direction: column;
+    }
+    .socials{
+        flex-direction: row;
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .event-img li{
+        width: 40%;
+    }
+}
+@media screen and (max-width: 768px){
+    .event-img li{
+        width: 50%;
+        padding-right: 40px;
+    }
+}
+@media screen and (max-width: 320px){
+    .mainnav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav{
+        flex-wrap: wrap;
+    }
+    .nav li:last-child, .promotions{
+        display: none;
+    }
+    #logo{
+        width: 65px;
+        height: 65px;
+    }
+    .logo{
+        height: auto;
+    }
+    .event-img li{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 10px;
+        padding-right: 0;
+    }
+    .section2{
+        padding: 0;
+        margin: 0;
+    }
+    #footertex{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 375px){
+    .mainnav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .nav li:last-child, .promotions{
+        display: none;
+    }
+    #logo{
+        width: 65px;
+        height: 65px;
+    }
+    .logo{
+        height: auto;
+    }
+    .event-img li{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 10px;
+        padding-right: 0;
+    }
+    .section2{
+        padding: 0;
+        margin: 0;
+    }
+    #footertex{
+        text-align: center;
+    }
+}
+@media screen and (max-width: 375px){
+    .mainnav{
+        flex-direction: column;
+        width: 100%;
+    }
+    .nav{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    .nav li:last-child, .promotions{
+        display: none;
+    }
+    #logo{
+        width: 65px;
+        height: 65px;
+    }
+    .logo{
+        height: auto;
+    }
+    .event-img li{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin-top: 10px;
+        padding-right: 0;
+    }
+    .section2{
+        padding: 0;
+        margin: 0;
+    }
+    #footertex{
+        text-align: center;
+    }
+}
